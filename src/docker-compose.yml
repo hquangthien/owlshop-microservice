@@ -4,9 +4,6 @@ services:
   portainer:
     image: portainer/portainer-ce
 
-  pgadmin:
-    image: dpage/pgadmin4  
-
   catalogdb:
     image: mongo
 
@@ -38,4 +35,3 @@ volumes:
   mongo_data:
   portaniner_data:
   postgres_data:
-  pgadmin_data:
