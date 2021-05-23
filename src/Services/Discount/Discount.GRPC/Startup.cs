@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Discount.GRPC.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -17,6 +18,7 @@ namespace Discount.GRPC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddGrpc();
+            services.AddScoped<IDiscountRepository, DiscountRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
