@@ -9,7 +9,7 @@ using Ordering.Application.Features.Orders.Commands.DeleteOrder;
 using Ordering.Application.Features.Orders.Commands.UpdateOrder;
 using Ordering.Application.Features.Orders.Queries.GetOrdersList;
 
-namespace Ordering.API
+namespace Ordering.API.Controllers
 {
     [ApiController]
     public class OrderController : ControllerBase
