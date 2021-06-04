@@ -4,6 +4,9 @@ services:
   portainer:
     image: portainer/portainer-ce
 
+  eventbus:
+    image: rabbitmq:3-management-alpine
+
   catalogdb:
     image: mongo
 
