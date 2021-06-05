@@ -102,6 +102,7 @@ services:
       - "ConnectionStrings:OrderingConnectionString=Server=orderdb;Database=OrderDB;User Id=sa;Password=Thien123"
       - "EmailSettings:FromAddress=hquangthien@gmail.com"
       - "EmailSettings:FromName=Thien Hoang"
+      - "EventBusSettings:HostAddress=amqp://guest:guest@eventbus:5672"
     depends_on:
       - orderdb
     ports:
