@@ -59,7 +59,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Basket",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "PUT" ]
     },
     {
       "DownstreamPathTemplate": "/api/v1/Basket/Checkout",
