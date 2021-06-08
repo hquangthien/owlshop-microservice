@@ -19,6 +19,12 @@ services:
   orderdb:
     image: mcr.microsoft.com/mssql/server:2017-latest
 
+  apigateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    build: 
+      context: .
+      dockerfile: ApiGateways/OcelotApiGw/Dockerfile
+
   catalog.api:
     image: ${DOCKER_REGISTRY-}catalogapi
     build: 

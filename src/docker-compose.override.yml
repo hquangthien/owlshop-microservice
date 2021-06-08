@@ -53,6 +53,18 @@ services:
     ports: 
       - "1433:1433"
 
+  apigateway:
+    container_name: apigateway
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on: 
+      - catalog.api
+      - basket.api
+      - discount.api
+      - ordering.api
+    ports: 
+      - "8010:80"
+
   catalog.api:
     container_name: catalog.api
     environment:
